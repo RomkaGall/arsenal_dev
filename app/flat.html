@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+    
+    //= template/head.html
+    <body>
+        //= template/header.html
+
+        <main class="main">
+            <div class="product product--page">
+                <div class="container white">
+                    <div class="product__content">
+                        <a href="#" class="back">вернуться к поиску</a>
+                        <h1 class="product__title">Однокомнатная квартира № 336</h1>
+
+                        <div class="product__block">
+                            <div class="product__image_block">
+                                <div class="product__image_wr">
+                                   
+                                    <div class="tab-content" id="myTabContent">
+                                        <div class="tab-pane fade show active" id="flat" role="tabpanel" aria-labelledby="flat-tab">
+                                            <img src="img/content/flat_3.svg" alt="" class="product__image">
+                                            <div class="compass">
+                                                <img src="img/design/compass.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="house" role="tabpanel" aria-labelledby="house-tab">
+                                            <img src="img/content/flat_2.svg" alt="" class="product__image">
+                                            <div class="compass">
+                                                <img src="img/design/compass.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="complex" role="tabpanel" aria-labelledby="complex-tab">
+                                            <img src="img/content/flat_1.svg" alt="" class="product__image">
+                                            <div class="compass">
+                                                <img src="img/design/compass.svg" alt="">
+                                            </div>
+                                        </div>
+                                      </div>
+                                </div>
+
+                                <div class="product__image_tabs">
+                                    <ul class="nav  tabs" id="myTab" role="tablist">
+                                        <li class="nav-item">
+                                          <a class="nav-link active" id="flat-tab" data-toggle="tab" href="#flat" role="tab" aria-controls="flat" aria-selected="true">Квартира</a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link" id="house-tab" data-toggle="tab" href="#house" role="tab" aria-controls="house" aria-selected="false">Дом</a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link" id="complex-tab" data-toggle="tab" href="#complex" role="tab" aria-controls="complex" aria-selected="false">Комплекс</a>
+                                        </li>
+                                      </ul>
+                                      
+                                </div>
+                            </div>
+
+                            <div class="product__info_block">
+                                <div class="product__price_wr">
+                                    <span class="product__price">5 437 673 руб</span>
+                                    <span class="product__price_hint"><span class="light">Базовая цена</span> 6 234 789 руб</span>
+                                </div>
+
+                                <div class="product__area">
+                                    <div class="area__item">
+                                        <span class="value">42.17 м2</span>
+                                        <span class="name">площадь</span>
+                                    </div>
+
+                                    <div class="area__item">
+                                        <span class="value">39.08 м2</span>
+                                        <span class="name">жилая площадь</span>
+                                    </div>
+                                </div>
+
+                                <p class="product__text">Выберите одну из <a href="#">трех дизайнерских отделок</a>  для своей квартиры.</p>
+
+                                <div class="product__coordinates_wr">
+                                    <div class="product__coordinates">
+                                        <div class="coordinates__item">Корпус 2</div>
+                                        <div class="coordinates__item">Этаж 7</div>
+                                        <div class="coordinates__item">Секция 1</div>
+                                    </div>
+
+                                    <span class="coordinates__deadline">Сдача в 1 квартале 2021 г.</span>
+                                </div>
+
+                                <div class="product__btns">
+                                    <button class="product__book white">Забронировать</button>
+                                    <a href="http://www.africau.edu/images/default/sample.pdf" download target="_blank">Скачать pdf</a>
+                                </div>
+
+                                <p class="product__text">
+                                    Эту квартиру вы можете купить в <a href="#">рассрочку</a>  или <a href="#">ипотеку от 0,01%</a>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        //= template/popups.html
+        //= template/footer.html
+    </body>
+</html>

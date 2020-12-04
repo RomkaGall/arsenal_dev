@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+    
+    //= template/head.html
+    <body>
+        //= template/header.html
+
+        <main class="main">
+            <div class="catalog">
+                <div class="container white">
+
+                    <div class="catalog__content">
+                        <div class="catalog__top">
+                            <h1 class="page__title">Выберите квартиру</h1>
+
+                            <div class="catalog__controls">
+                                <button class="control__text link_text">выбрать на плане</button>
+                                <div class="controls__list">
+                                    <div class="controls__filters">
+                                        
+                                        <div class="controls__item active increase">
+                                           
+                                            <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <mask id="a" x="3" y="6" width="18" height="12" mask-type="alpha" maskUnits="userSpaceOnUse">
+                                                <path d="m3 18h6v-2h-6v2zm0-12v2h18v-2h-18zm0 7h12v-2h-12v2z" clip-rule="evenodd" fill="#fff" fill-rule="evenodd"/>
+                                                </mask>
+                                                <g mask="url(#a)">
+                                                    <path d="m-13-13h50v50h-50v-50z" clip-rule="evenodd" fill="#888784" fill-rule="evenodd"/>
+                                                    <mask x="-13" y="-13" width="50" height="50" mask-type="alpha" maskUnits="userSpaceOnUse">
+                                                    <path d="m-13-13h50v50h-50v-50z" clip-rule="evenodd" fill="#fff" fill-rule="evenodd"/>
+                                                    </mask>
+                                                </g>
+                                            </svg>
+
+                                            <span class="text">по площади</span>
+                                        </div>
+
+                                        <div class="controls__item">
+                                           
+                                            <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <mask id="a" x="3" y="6" width="18" height="12" mask-type="alpha" maskUnits="userSpaceOnUse">
+                                                <path d="m3 18h6v-2h-6v2zm0-12v2h18v-2h-18zm0 7h12v-2h-12v2z" clip-rule="evenodd" fill="#fff" fill-rule="evenodd"/>
+                                                </mask>
+                                                <g mask="url(#a)">
+                                                    <path d="m-13-13h50v50h-50v-50z" clip-rule="evenodd" fill="#888784" fill-rule="evenodd"/>
+                                                    <mask x="-13" y="-13" width="50" height="50" mask-type="alpha" maskUnits="userSpaceOnUse">
+                                                    <path d="m-13-13h50v50h-50v-50z" clip-rule="evenodd" fill="#fff" fill-rule="evenodd"/>
+                                                    </mask>
+                                                </g>
+                                            </svg>
+
+                                            <span class="text">по цене</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="controls__view_type">
+                                        <button class="type__item active" data-type="card">
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect width="8" height="8.30769" fill="#888784"/>
+                                                <rect x="10" width="8" height="8.30769" fill="#888784"/>
+                                                <rect y="9.69229" width="8" height="8.30769" fill="#888784"/>
+                                                <rect x="10" y="9.69229" width="8" height="8.30769" fill="#888784"/>
+                                            </svg>                                                
+                                        </button>
+
+                                        <button class="type__item" data-type="list">
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect width="18" height="8.30769" fill="#888784"/>
+                                                <rect y="9.69229" width="18" height="8.30769" fill="#888784"/>
+                                            </svg>                                                
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="filter_btn_wr">
+                            <div class="filter_btn_mobile">
+                                <h2 class="filter__title square">Фильтры</h2>
+                            </div>
+                            <div class="filter__active_values">
+                                
+                                <div class="filter_value">
+                                    <span class="filter_value__text">от 3 млн. до 4.5 млн.</span>
+                                    <button class="filter_value__hide">
+                                        <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 1L1 5" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M1 1L5 5" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                                
+                                    </button>
+                                </div>
+
+                                <div class="filter_value">
+                                    <span class="filter_value__text">2 комнаты</span>
+                                    <button class="filter_value__hide">
+                                        <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 1L1 5" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M1 1L5 5" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                                
+                                    </button>
+                                </div>
+
+                                <div class="filter_value">
+                                    <span class="filter_value__text">2-4 этаж</span>
+                                    <button class="filter_value__hide">
+                                        <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 1L1 5" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M1 1L5 5" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                                
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="catalog__controls catalog__controls--mobile">
+                            <div class="controls__list">
+                                <div class="controls__filters">
+                                    
+                                    <div class="controls__item active increase">
+                                       
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="3" y="6" width="18" height="12">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 18H9V16H3V18ZM3 6V8H21V6H3ZM3 13H15V11H3V13Z" fill="white"/>
+                                            </mask>
+                                            <g mask="url(#mask0)">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M-13 -13H37V37H-13V-13Z" fill="#888784"/>
+                                            <mask id="mask1" mask-type="alpha" maskUnits="userSpaceOnUse" x="-13" y="-13" width="50" height="50">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M-13 -13H37V37H-13V-13Z" fill="white"/>
+                                            </mask>
+                                            </g>
+                                        </svg>
+                                            
+
+                                        <span class="text">по площади</span>
+                                    </div>
+
+                                    <div class="controls__item">
+                                       
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="3" y="6" width="18" height="12">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 18H9V16H3V18ZM3 6V8H21V6H3ZM3 13H15V11H3V13Z" fill="white"/>
+                                            </mask>
+                                            <g mask="url(#mask0)">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M-13 -13H37V37H-13V-13Z" fill="#888784"/>
+                                            <mask id="mask1" mask-type="alpha" maskUnits="userSpaceOnUse" x="-13" y="-13" width="50" height="50">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M-13 -13H37V37H-13V-13Z" fill="white"/>
+                                            </mask>
+                                            </g>
+                                        </svg>
+
+                                        <span class="text">по цене</span>
+                                    </div>
+                                </div>
+
+                                <div class="controls__view_type">
+                                    <button class="type__item active" data-type="card">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="8" height="8.30769" fill="#888784"/>
+                                            <rect x="10" width="8" height="8.30769" fill="#888784"/>
+                                            <rect y="9.69229" width="8" height="8.30769" fill="#888784"/>
+                                            <rect x="10" y="9.69229" width="8" height="8.30769" fill="#888784"/>
+                                        </svg>                                                
+                                    </button>
+
+                                    <button class="type__item" data-type="list">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="18" height="8.30769" fill="#888784"/>
+                                            <rect y="9.69229" width="18" height="8.30769" fill="#888784"/>
+                                        </svg>                                                
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="catalog__block">
+                            //= template/filter.html
+                            //= template/flats.html
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        //= template/popups.html
+        //= template/footer.html
+    </body>
+</html>

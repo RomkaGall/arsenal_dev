@@ -1,0 +1,165 @@
+.catalog {
+}
+
+.catalog__content {
+    padding: 100px 0;
+
+    @media (max-width: 767px) {
+        padding: 40px 0;
+    }
+}
+
+.catalog__block {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalog__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+
+    @media (max-width: 767px) {
+        display: block;
+    }
+
+    .page__title {
+        @media (max-width: 767px) {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.catalog__controls {
+    &.catalog__controls--mobile {
+        display: none;
+        margin-bottom: 25px;
+
+        @media (max-width: 1023px) {
+            display: block;
+        }
+
+        .controls__list {
+            @media (max-width: 1023px) {
+                display: flex;
+            }
+        }
+
+        .controls__list {
+            justify-content: flex-end;
+        }
+        .controls__filters {
+            margin-right: 30px;
+
+            @media (max-width: 767px) {
+                justify-content: flex-end;
+                margin-right: 0;
+            }
+        }
+    }
+
+    .control__text {
+        display: block;
+        margin-bottom: 19px;
+        margin-left: auto;
+
+        @media (max-width: 1023px) {
+            margin-bottom: 0;
+        }
+        @media (max-width: 767px) {
+            margin-left: 0;
+        }
+    }
+
+    .controls__list {
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 1023px) {
+            display: none;
+        }
+    }
+
+    .controls__view_type {
+        @media (max-width: 767px) {
+            display: none;
+        }
+    }
+
+    .controls__filters {
+        display: flex;
+        align-items: center;
+        margin-right: 50px;
+    }
+
+    .controls__item {
+        display: flex;
+        align-items: center;
+        margin-right: 25px;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+
+        &:hover {
+            color: $color2;
+
+            path {
+                fill: $color2;
+            }
+        }
+
+        &.active {
+            path {
+                fill: $color2;
+            }
+
+            svg {
+                transform: scale(-1, -1);
+            }
+
+            &.increase {
+                svg {
+                    transform: scaleX(-1);
+                }
+            }
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        svg {
+            margin-right: 10px;
+            transition: 0.2s ease-in-out;
+
+            path {
+                transition: 0.2s ease-in-out;
+            }
+        }
+    }
+
+    .type__item {
+        margin-right: 5px;
+        outline: none;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover,
+        &.active {
+            rect {
+                fill: $color2;
+            }
+        }
+
+        rect {
+            transition: 0.2s ease-in-out;
+        }
+
+        svg {
+            display: block;
+        }
+    }
+}
